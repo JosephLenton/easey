@@ -7,10 +7,10 @@ macro_rules! generate_pre_delay {
         /// i.e. From this graph ...
         ///
         /// ```text
-        ///   |      /
         ///   |     /
         ///   |    /
         ///   |   /
+        ///   |  /
         ///   | /
         ///   --------
         /// ```
@@ -18,15 +18,16 @@ macro_rules! generate_pre_delay {
         /// To this ...
         ///
         /// ```text
-        ///   |       /
         ///   |      |
-        ///   |     /
+        ///   |     |
         ///   |    |
-        ///   |   /
+        ///   |   |
+        ///   |--|
         ///   --------
         /// ```
         ///
-        /// ^ Note how the graph is more compressed on the right.
+        /// The result starts with a flatline, and the increase is more
+        /// compressed on the right.
         ///
         pub fn pre_delay(n: $fxx, delay_point: $fxx) -> $fxx {
             if n < delay_point {

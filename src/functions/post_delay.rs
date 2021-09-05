@@ -7,10 +7,10 @@ macro_rules! generate_post_delay {
         /// i.e. From this graph ...
         ///
         /// ```text
-        ///   |      /
         ///   |     /
         ///   |    /
         ///   |   /
+        ///   |  /
         ///   | /
         ///   --------
         /// ```
@@ -18,15 +18,16 @@ macro_rules! generate_post_delay {
         /// To this ...
         ///
         /// ```text
-        ///   |     /--
+        ///   |     |--
         ///   |    |
-        ///   |   /
+        ///   |   |
         ///   |  |
-        ///   | /
+        ///   | |
         ///   ---------
         /// ```
         ///
-        /// ^ Note how the graph is more compressed on the right.
+        /// The result starts more compressed to the left,
+        /// followed by a flat line for the upper values.
         ///
         pub fn post_delay(n: $fxx, delay_point: $fxx) -> $fxx {
             if delay_point < n {
