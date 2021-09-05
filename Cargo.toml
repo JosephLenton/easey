@@ -1,0 +1,8 @@
+[workspace]
+members = [
+    "timelot",
+    "f_generic",
+]
+default-members = [
+    "timelot",
+]

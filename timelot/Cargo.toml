@@ -1,0 +1,10 @@
+[package]
+name = "timelot"
+version = "0.1.0"
+edition = "2018"
+
+[dependencies]
+f_generic = { path = './../f_generic' }
+
+[dev-dependencies]
+assert_approx_eq = "1.1.0"
