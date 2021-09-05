@@ -1,5 +1,5 @@
 use ::assert_approx_eq::assert_approx_eq;
-use ::timelot::f32::pre_delay;
+use ::easey::f32::pre_delay;
 
 #[test]
 fn it_should_return_zero_when_before_delay_point() {

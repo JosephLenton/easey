@@ -15,5 +15,5 @@ macro_rules! generate_square_wave {
                 true
             }
         }
-    }
+    };
 }

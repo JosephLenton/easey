@@ -17,13 +17,13 @@ mod pre_delay;
 mod square_wave;
 
 macro_rules! generate_functions {
-  ( $fxx:ident ) => {
-    generate_ease_in!($fxx);
-    generate_ease_in_out!($fxx);
-    generate_ease_out!($fxx);
-    generate_inverse!($fxx);
-    generate_post_delay!($fxx);
-    generate_pre_delay!($fxx);
-    generate_square_wave!($fxx);
-  }
+    ( $fxx:ident ) => {
+        generate_ease_in!($fxx);
+        generate_ease_in_out!($fxx);
+        generate_ease_out!($fxx);
+        generate_inverse!($fxx);
+        generate_post_delay!($fxx);
+        generate_pre_delay!($fxx);
+        generate_square_wave!($fxx);
+    };
 }

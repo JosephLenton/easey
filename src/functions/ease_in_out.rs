@@ -48,5 +48,5 @@ macro_rules! generate_ease_in_out {
                 (2.0 - (2.0 as $fxx).powf(-20.0 * n + 10.0)) / 2.0
             }
         }
-    }
+    };
 }

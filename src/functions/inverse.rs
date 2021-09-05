@@ -3,5 +3,5 @@ macro_rules! generate_inverse {
         pub fn inverse(n: $fxx) -> $fxx {
             1.0 - n
         }
-    }
+    };
 }

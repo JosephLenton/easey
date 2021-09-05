@@ -1,5 +1,5 @@
 use ::assert_approx_eq::assert_approx_eq;
-use ::timelot::f32::post_delay;
+use ::easey::f32::post_delay;
 
 #[test]
 fn it_should_return_half_when_at_half_delay_point() {

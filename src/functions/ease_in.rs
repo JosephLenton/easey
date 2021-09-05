@@ -28,5 +28,5 @@ macro_rules! generate_ease_in {
                 (2.0 as $fxx).powf(10.0 * n - 10.0)
             }
         }
-    }
+    };
 }

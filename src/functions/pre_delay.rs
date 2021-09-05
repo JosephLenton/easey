@@ -31,5 +31,5 @@ macro_rules! generate_pre_delay {
                 (n - delay_point) / (1.0 - delay_point)
             }
         }
-    }
+    };
 }

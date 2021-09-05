@@ -31,5 +31,5 @@ macro_rules! generate_post_delay {
                 n / delay_point
             }
         }
-    }
+    };
 }

@@ -35,5 +35,5 @@ macro_rules! generate_ease_out {
         pub fn ease_out_circ(n: $fxx) -> $fxx {
             (1.0 - (n - 1.0).powi(2)).sqrt()
         }
-    }
+    };
 }
