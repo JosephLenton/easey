@@ -35,7 +35,7 @@ macro_rules! generate_ease_in {
         }
 
         pub fn ease_in_circ(n: $fxx) -> $fxx {
-            (1.0 - n.powi(2)).sqrt()
+            1.0 - (1.0 - n.powi(2)).sqrt()
         }
 
         pub fn ease_in_back(n: $fxx) -> $fxx {
