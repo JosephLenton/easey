@@ -1,1 +1,1 @@
-::f_generic::generate_functions!(f64);
+generate_functions!(f64);

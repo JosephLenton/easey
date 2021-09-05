@@ -1,4 +1,3 @@
-#[macro_export]
 macro_rules! generate_square_wave {
     ( $fxx:ident ) => {
         pub fn square_wave(n: $fxx, wave_duration: $fxx) -> $fxx {

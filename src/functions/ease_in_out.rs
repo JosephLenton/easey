@@ -1,4 +1,3 @@
-#[macro_export]
 macro_rules! generate_ease_in_out {
     ( $fxx:ident ) => {
         pub fn ease_in_out(n: $fxx) -> $fxx {

@@ -1,4 +1,3 @@
-#[macro_export]
 macro_rules! generate_post_delay {
     ( $fxx:ident ) => {
         /**
