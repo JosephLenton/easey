@@ -1,7 +1,11 @@
 [package]
 name = "easey"
 version = "1.0.0"
+authors = ["josephlenton@gmail.com <josephlenton@gmail.com>"]
 edition = "2018"
+license = "MIT"
+description = "Easing functions for interpolation between 0.0 and 1.0"
+keywords = ["easing", "interpolation", "timing", "f32", "f64"]
 
 [dependencies]
 
