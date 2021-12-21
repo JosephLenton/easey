@@ -17,9 +17,8 @@
 //! For example ...
 //!
 //! ```
-//!   use ::easey::f32::Easey;
-//!
-//!   let n : f32 = 0.3.pre_delay(0.2).ease_in()
+//!   use ::easey::Easey;
+//!   let n : f32 = 0.3.pre_delay(0.2).ease_in();
 //! ```
 //!
 
