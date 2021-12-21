@@ -1,6 +1,9 @@
 pub trait Easey {
     fn inverse(self) -> Self;
 
+    fn minmaxp(self) -> Self;
+    fn minmax(self, min: Self, max: Self) -> Self;
+
     fn pre_delay(self, point: Self) -> Self;
     fn post_delay(self, point: Self) -> Self;
 
@@ -44,6 +47,16 @@ macro_rules! impl_timing_trait {
             #[inline(always)]
             fn inverse(self) -> Self {
                 crate::$fxx::inverse(self)
+            }
+
+            #[inline(always)]
+            fn minmaxp(self) -> Self {
+                crate::$fxx::minmaxp(self)
+            }
+
+            #[inline(always)]
+            fn minmax(self, min: Self, max: Self) -> Self {
+                crate::$fxx::minmax(self, min, max)
             }
 
             #[inline(always)]

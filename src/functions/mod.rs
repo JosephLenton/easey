@@ -10,6 +10,8 @@ mod ease_out;
 #[macro_use]
 mod inverse;
 #[macro_use]
+mod minmax;
+#[macro_use]
 mod post_delay;
 #[macro_use]
 mod pre_delay;
@@ -22,6 +24,7 @@ macro_rules! generate_functions {
         generate_ease_in_out!($fxx);
         generate_ease_out!($fxx);
         generate_inverse!($fxx);
+        generate_minmax!($fxx);
         generate_post_delay!($fxx);
         generate_pre_delay!($fxx);
         generate_square_wave!($fxx);
