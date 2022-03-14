@@ -39,6 +39,10 @@ pub trait Easey {
 
     fn square_wave(self, wave_duration: Self) -> Self;
     fn square_wave_as_bool(self, wave_duration: Self) -> bool;
+
+    fn sin_wave(self) -> Self;
+    fn cos_wave(self) -> Self;
+    fn tan_wave(self) -> Self;
 }
 
 macro_rules! impl_timing_trait {
@@ -212,6 +216,21 @@ macro_rules! impl_timing_trait {
             #[inline(always)]
             fn square_wave_as_bool(self, wave_duration: $fxx) -> bool {
                 crate::$fxx::square_wave_as_bool(self, wave_duration)
+            }
+
+            #[inline(always)]
+            fn sin_wave(self) -> Self {
+                crate::$fxx::sin_wave(self)
+            }
+
+            #[inline(always)]
+            fn cos_wave(self) -> Self {
+                crate::$fxx::cos_wave(self)
+            }
+
+            #[inline(always)]
+            fn tan_wave(self) -> Self {
+                crate::$fxx::tan_wave(self)
             }
         }
     };

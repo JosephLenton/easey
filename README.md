@@ -1,2 +1,3 @@
-# timelot
-Timing functions for animation in Rust
+# Easey
+
+Timing functions for animation in Rust.

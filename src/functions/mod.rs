@@ -17,6 +17,8 @@ mod post_delay;
 mod pre_delay;
 #[macro_use]
 mod square_wave;
+#[macro_use]
+mod trigonometry_wave;
 
 macro_rules! generate_functions {
     ( $fxx:ident ) => {
@@ -28,5 +30,6 @@ macro_rules! generate_functions {
         generate_post_delay!($fxx);
         generate_pre_delay!($fxx);
         generate_square_wave!($fxx);
+        generate_trigonometry_wave!($fxx);
     };
 }

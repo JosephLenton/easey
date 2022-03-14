@@ -8,7 +8,10 @@ macro_rules! generate_minmax {
             #[cfg(debug_assertions)]
             {
                 if max < min {
-                    panic!("minmax called where max is less than min ... minmax({}, {}, {})", n, min, max);
+                    panic!(
+                        "minmax called where max is less than min ... minmax({}, {}, {})",
+                        n, min, max
+                    );
                 }
             }
 
